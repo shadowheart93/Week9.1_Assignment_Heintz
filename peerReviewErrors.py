@@ -21,7 +21,8 @@ def chooseCave():
 	while(cave != '1' and cave != '2'): #I added the parentheses
 		#print('Which cave will you go into? (1 or 2)')
 		#cave = input()
-		cave = input('Which cave will you go into (1 or 2)')
+		cave = input('Which cave will you go into (1 or 2)') #made cave = input
+		return cave# returns cave in while loop
 
 	#return caves
 
@@ -31,7 +32,8 @@ def checkCave(chosenCave):
 	time.sleep(2)
 	print('It is dark and spooky...')
 	#sleep for 2 seconds
-	time.sleep(3)
+	#time.sleep(3)
+	time.sleep(2) # change to sleep for two seconds instead of 3
 	print('A large dragon jumps out in front of you! He opens his jaws and...')
 	print()
 	#sleep for 2 seconds
@@ -55,6 +57,8 @@ while(playAgain == 'yes' or playAgain == 'y'): #put the while in parentheses and
     
 	print('Do you want to play again? (yes or no)')
 	playAgain = input()
-	if playAgain == "no":
-		print("Thanks for planing")
+	#if playAgain == "no":
+	if playAgain == "no" or playAgain == 'n': #add the acceptance of 'n'
+		#print("Thanks for planing")
+		print('Thanks for playing') #correct spelling for playing
 
